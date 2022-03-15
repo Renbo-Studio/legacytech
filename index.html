@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<title>Legacy Tech</title>
+		<link rel="icon" href="l-logo.png">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<style type="text/css">
+			.bg{
+				position: fixed;
+				z-index: -1;
+				top: 0px;
+				right: 0px;
+				left: 0px;
+				bottom: 0px;
+				opacity: 0.8;
+			}
+			.text{
+				color: white;
+				font-family: 'Century Gothic';
+				font-size: 5rem;
+				text-align: center;
+				margin-top: 15%;
+
+			}
+			.text_small{
+				color: white;
+				font-family: 'Century Gothic';
+				font-size: 2.5rem;
+				text-align: center;
+				margin-top:40%;
+
+			}
+
+body{
+
+	background-size: cover;
+	background-repeat: none;
+	background-position: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .hide-on-small-only, .hide-on-small-and-down {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 993px) {
+  .hide-on-large-only {
+    display: none !important;
+  }
+}
+		</style>
+	</head>
+	<body id="body">
+		<img  src="bg.svg"  width="100%" height="100%" class="bg hide-on-small-only">
+		<img src="small_bg.png"  width="100%" height="100%" class="bg hide-on-large-only hide-on-med-only">
+		<h1 class="text hide-on-small-only ">
+			LEGACY TECH
+		</h1>
+		<h4 class="text_small hide-on-large-only hide-on-med-only">
+			LEGACY TECH
+		</h4>
+		<div id="wave" class=" loader" style="z-index:99">
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+                <span class="stroke"></span>
+            </div> 
+            <h5 style="text-align:center">Loading</h5>
+
+            
+	</body>
+	</html>	
+
+	<script>
+		
+		var body= document.getElementById('body');
+	
+		function gif1(){
+		
+		body.style.background="url('GIF/1.gif')";
+		setTimeout(gif2,10000);
+	}
+	function gif2(){
+		
+		body.style.background="url('GIF/2.gif')";
+		body.style.backgroundSize="cover";
+		setTimeout(gif3,10000);
+	}
+	function gif3(){
+		
+		body.style.background="url('GIF/3.gif')";
+		body.style.backgroundSize="cover";
+		setTimeout(gif4,10000);
+	}
+	function gif4(){
+		
+		body.style.background="url('GIF/4.webp')";
+		body.style.backgroundSize="cover";
+		setTimeout(gif5,10000);
+	}
+	function gif5(){
+		 
+		body.style.background="url('GIF/5.gif')";
+		body.style.backgroundSize="cover";
+	
+	}
+
+gif1();
+	</script>
+
